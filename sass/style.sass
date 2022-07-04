@@ -1,0 +1,566 @@
+*
+    font-family: 'Playfair Display'
+    font-style: normal
+    font-weight: 400
+    font-size: 28px
+    line-height: 32px
+    text-shadow: 0px 0px 30px #000000
+
+
+
+    color: #FFFFFF
+
+    box-sizing: border-box
+
+    margin: 0
+    padding: 0
+
+body
+    background-color: #242b33
+
+
+
+@import "base/varibles"
+@import "base/mixins"
+
+@import "blocks/header"
+@import "blocks/promo"
+@import "blocks/hello"
+@import "blocks/for-you"
+@import "blocks/benefits"
+@import "blocks/carousel"
+@import "blocks/steps"
+@import "blocks/footer"
+
+.overlay
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.6)
+    &_benefits
+
+    &_steps
+        padding: 125px 0 50px 0
+
+    &_carousel
+        padding: 115px 0 10px 0
+        min-height: 
+
+
+
+
+
+.title
+    font-weight: 700
+    font-size: 36px
+    line-height: 54px
+    
+    color: $main_color
+    margin-bottom: 64px
+    text-shadow: 0px 0px 30px #000000
+    &_right
+        text-align: right
+    &_carousel
+        text-align: center
+
+    &_footer
+        font-size: 40px
+        margin-bottom: 40px
+
+
+.subtitle
+    font-weight: 700
+    font-size: 36px
+    line-height: 48px
+    text-align: center
+
+    color: $main_color
+
+    text-shadow: 0px 0px 30px #000000
+
+
+.solid
+    font-weight: 700
+    font-family: 'Raleway'
+    text-shadow: 0px 0px 30px #000000
+    
+
+
+
+@media (max-width: 1500px)
+    .hello 
+        .title
+            font-size: 36px
+            margin-bottom: 0px
+            line-height: 50px
+
+        .descr 
+            max-width: 600px
+            font-size: 20px
+            &_right
+        
+        .main_color
+            font-size: 21px
+
+        .solid
+            font-size: 21px
+
+    .title
+        font-size: 36px
+        margin-bottom: 10px
+
+
+    // .carousel
+    //     .container
+    //         .slide
+    //             text-align: center
+    //             width: 80%
+    //             margin-left: 10%
+
+    //         .slick
+    //             &-slider
+
+    //             &-list
+
+    //             &-track 
+    //                 transform: translate3d(-963px, 0px, 0px)
+
+    //             &-slide
+    //                 margin: 0
+
+    
+
+    .steps
+
+        &__title
+            font-size: 28px
+        
+        &__descr
+            font-size: 20px
+        &__item
+            
+            &_left
+                .steps__icon-wrap
+                .number
+                    right: -15px
+
+            
+            &_right
+                .steps__icon-wrap
+                .number
+                    left: -15px
+
+
+
+@media (max-width: 1200px)
+    .steps
+        &__icon-wrap
+            max-width: 78px
+
+        &__text
+            max-width: 325px
+
+        &__title
+            font-size: 25px
+            margin-bottom: 10px
+
+        &__descr
+            margin-top: 0
+            font-size: 20px
+
+        &__item
+            
+            &_left
+                .steps__icon-wrap
+                .number
+                    right: 65px
+
+            
+            &_right
+                .steps__icon-wrap
+                .number
+                    left: 65px
+                    
+        .subtitle
+            font-size: 48px
+            line-height: 57px
+
+
+
+@media (max-width: 992px)
+    .header
+        padding: 66px 0
+
+    .promo
+        min-height: 528px
+        padding-top: 200px
+
+        &__title
+            font-size: 30px
+            line-height: 40px
+
+    .hello 
+        .title
+            font-size: 40px
+
+    .for-you
+        min-height: 850px
+        &__descr
+            font-size: 20px
+            line-height: 26px
+
+    .benefit
+        height: 803px
+        &__wrap 
+            flex-direction: column
+            align-items: center
+            width: 100%
+            &-icon
+                width: 100px
+            img
+                width: 100%
+        &__title
+            font-size: 24px
+            line-height: 35px
+        
+        &__list-item
+            font-size: 20px
+            line-height: 27px
+
+        &__item
+            width: 100%
+            &_right
+                .benefit__title
+                    margin-right: 60px
+
+
+    .carousel
+        &__inner 
+            width: 100%
+        &__wrap
+            text-align: center
+        .container
+            margin-left: 30
+            .slide
+                width: 300px
+                margin: 0
+                margin-left: auto
+                margin-right: auto
+
+                &__descr
+                    font-size: 20px
+                    margin-bottom: 50px
+                    margin-left: auto
+                    margin-right: auto
+
+            .slick
+                &__list
+                    width: 530px
+                &-slide
+
+
+    .steps
+        height: 1100px
+        &__wrap
+            margin-top: 0
+            align-items: center
+            &::before
+                display: none
+
+        &__item
+            margin-top: 100px
+            &_left
+                align-self: center
+                .number
+                    right: 50%
+                    transform: translateX(50%)
+            &_right
+                align-self: center
+                .number
+                    left: 50%
+                    transform: translateX(-50%)
+
+    .footer
+        .container
+            .title
+                &_footer
+                    font-size: 36px
+        &__official
+            margin-right: 0
+
+                    
+
+    
+@media (max-width: 768px)
+    .overlay
+        &_steps
+            padding-top: 50px 
+
+
+    .header
+        padding: 27px 0
+
+        &__navigation
+            position: fixed
+            top: 0
+            right: -50%
+            flex-direction: column
+            justify-content: center
+            height: 100vh
+            width: 50%
+            border-radius: 0
+            background: rgba(0, 0, 0, 0.7)
+            // transition-duration: 0.2s all
+            z-index: 100
+
+            .tap-screen
+                width: 100%
+                height: 100vh
+                position: absolute
+                left: -100%
+                &_active
+                    display: block
+
+            &_active
+                transform: translateX(-100%)
+
+            &-item
+                width: 50vw
+                a
+                    position: relative
+                    text-align: center
+                    display: block
+                    width: 50vw
+                    font-size: 24px
+                    padding-top: 20px
+                    padding-bottom: 20px
+                    line-height: 40px
+                    height: 80px
+                    color: #fff
+                    margin-left: 0
+
+                &_logo
+                    display: block
+                    img
+                        width: 130px
+                        height: 38px
+
+        &__call
+            margin-right: 20px
+                
+        .hamburger
+            position: fixed
+            display: block
+
+    .promo
+        padding-left: 73px
+        padding-right: 73px
+
+        &__title
+            font-size: 27px
+            line-height: 39px
+
+
+    .hello 
+        .title
+            font-size: 34px
+            margin-bottom: 10px
+            line-height: 59px
+
+        .descr 
+            font-size: 15px
+            &_right
+        
+        .main_color
+            font-size: 16px
+
+        .solid
+            font-size: 16px
+
+
+    .for-you
+        min-height: 1000px
+        &__container
+            flex-direction: column
+        &__item
+            margin-top: 40px
+            &_left
+                text-align: center
+                align-self: center
+            &_right
+                text-align: center
+                align-self: center
+
+    
+
+
+    .footer
+        .container
+            .title
+        &__official
+            display: none
+
+
+
+@media (max-width: 576px)
+    .subtitle
+        font-size: 24px
+    .header
+        padding: 27px 0
+
+        &__navigation
+            width: 70%
+            right: -70%
+            &_active
+            &-item
+                width: 70vw
+
+                a
+                    margin: 0 auto
+                    font-size: 18px
+
+
+
+
+    .promo
+        padding-left: 73px
+        padding-right: 73px
+        background: linear-gradient(180deg, rgba(45, 52, 60, 0) 0%, rgba(45, 52, 60, 0) 50%, #242B33 95%), url("../img/promo_bg_min_v2.jpg") center center/cover no-repeat
+ 
+
+        &__title
+            font-size: 24px
+            line-height: 29px
+
+    .promo__tel-wrap .phone__tel
+        font-size: 14px
+
+    .hello 
+        padding: 0
+        background: none
+        height: 900px
+        min-height: 240px 
+
+        .title
+            font-size: 27px
+            line-height: 40px
+            br
+                display: none
+
+        .descr
+            br
+                display: none
+
+        .guy
+            display: block
+
+    .for-you
+        height: 1100px
+        &__item
+            width: 100%
+        &__descr
+            font-size: 15px
+            width: 100%
+
+
+    .benefit
+        min-height: 600px
+        height: 600px
+        .container
+        &__wrap
+            padding: 40px 30px
+            justify-content: start
+
+            &-icon
+                display: none
+            img
+        &__title
+            font-size: 24px
+            line-height: 34px
+        &__list-item
+            font-size: 15px
+            line-height: 22px
+
+        &__item
+            &-wrap
+                justify-content: center
+
+
+            &_right
+
+                .benefit__title
+                    margin-right: 10px
+
+
+    .carousel
+        .title_carousel
+            font-size: 24px
+        .container
+            .slide
+                &__descr
+                    font-size: 17px
+
+
+    .steps
+        height: 893px
+        &__wrap
+
+        .subtitle
+            font-size: 28px
+            line-height: 44px
+        &__item
+            width: 100%
+            flex-direction: column
+            text-align: center
+            img
+                display: none
+
+        &__title
+            font-size: 19px
+            line-height: 26px
+        
+        &__text
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+
+        &__descr
+            font-size: 15px
+            line-height: 21px
+        .number 
+            font-size: 22px
+    
+
+    .footer
+        .container
+            .title_footer
+                font-size: 30px
+
+
+        &__social
+            align-items: center
+            justify-content: center
+            text-align: center
+        .name
+            font-size: 17px
+            margin-bottom: 0
+        &__tel
+            font-size: 17px
+            margin-bottom: 0
+            a 
+                font-size: 17px
+        &__mail
+            font-size: 17px
+            a
+                font-size: 17px
+        .copyright
+            font-size: 8px
+
+
+@media (max-width: 380px)
+
+    .hello 
+        min-height: 240px
+        height: 900px
+
+    .benefit
+        min-height: 600px
+        height: 700px

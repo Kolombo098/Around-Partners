@@ -1,0 +1,83 @@
+.carousel
+    background: url("../img/carousel_bg.jpg") center center/cover no-repeat
+    
+    min-height: 100px
+    .container
+        display: flex
+        justify-content: center
+    
+        &__inner
+        position: relative
+        max-width: 950px
+
+        .slide
+            width: 100%
+            margin-top: 30px
+            max-height: 157px 
+            &__descr
+                text-align: center 
+                font-family: 'Raleway'
+                font-size: 20px
+                line-height: 30px
+                text-align: center
+                margin-top: 10px
+                width: 311px
+            &:hover
+                box-shadow: 0px 0px 20px $main_color
+
+
+    .slick
+        &-list
+        &-slide
+            width: 311px
+            margin: 0 20px
+
+    .slick-dots
+        display: flex
+        justify-content: center
+        width: 100%
+        button
+            cursor: pointer
+
+        
+        li
+            list-style-type: none
+                // position: absolute
+                // left: 50%
+                // transform: translateX(-50%)
+                // color: $main_color
+                // padding-left: 42.5px !important
+            border-radius: 0
+            
+
+            &.slick-active
+                button
+                    background-color: $main_color
+                    box-shadow: none
+
+
+
+        
+        button
+            width: 131px
+            height: 13px
+            background: #FFFFFF
+            box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.41)
+            font-size: 0px
+            border: none
+            margin: 0 20px
+            transition-duration: 0.2s all
+
+@media (min-width: 992px)  
+
+    .carousel
+        .slick
+            &-list
+                width: 1045px
+            &-slide
+
+        .slick-dots
+            button
+                &:hover
+                    box-shadow: 0px 0px 10px #8DC8CF
+

@@ -1,0 +1,109 @@
+.steps
+    height: 1250px
+    background: url("../img/steps_bg.jpg") center center/cover no-repeat
+
+    
+
+
+
+    .subtitle
+        font-size: 40px
+        line-height: 50px
+        margin-bottom: 23px
+        text-shadow: 0px 0px 30px #000000
+
+    &__wrap
+        margin-top: 100px
+        position: relative
+        width: 100%
+        height: 100%
+
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        &::before
+            content: ''
+            position: absolute
+
+            top: 10px
+            left: 50%
+            transform: translateX(-50%)
+            width: 7px
+            height: 930px
+
+            background: linear-gradient(180deg, #8DC8CF 31.25%, rgba(141, 200, 207, 0) 100%)
+
+    &__item
+        position: relative
+        display: flex
+        justify-content: center
+        width: 495px
+        margin-top: 60px
+        
+        &_left
+            align-self: start
+            text-align: left
+            .steps__icon-wrap
+                margin-right: 21px
+            .number
+                right: -87px
+
+        
+        &_right
+            align-self: end
+            text-align: right
+            .steps__icon-wrap
+                margin-left: 21px
+            .number
+                left: -87px
+
+            
+
+
+    .number
+        font-size: 30px
+        color: #FFFFFF
+        opacity: 0.7
+        position: absolute
+        top: -60px
+        
+        text-shadow: 2px 0 2px #000
+        text-shadow: 0 2px 1px #000
+        text-shadow: -2px 0 2px #000
+        text-shadow: 0 -2px 2px #000
+
+    &__icon-wrap
+        max-width: 110px
+        img
+            width: 100%
+
+
+    &__text
+        max-width: 374px
+    &__title
+        font-weight: 700
+        font-size: 30px
+        line-height: 40px
+
+        color: #8DC8CF
+
+        text-shadow: 2px 0 2px #000
+        text-shadow: 0 2px 1px #000
+        text-shadow: -2px 0 2px #000
+        text-shadow: 0 -2px 2px #000
+
+    &__descr
+        margin-top: 20px
+        font-family: 'Raleway'
+        font-size: 20px
+        line-height: 30px
+
+        color: #FFFFFF
+        text-shadow: 2px 0 2px #000
+        text-shadow: 0 2px 1px #000
+        text-shadow: -2px 0 2px #000
+        text-shadow: 0 -2px 2px #000
+
+
+

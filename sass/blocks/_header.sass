@@ -1,0 +1,72 @@
+.header
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: start
+    width: 100%
+    height: 90px
+    padding: 49px 104px 0 94px
+    z-index: 10
+
+    &__official
+        width: 153px
+        height: 42px
+        &-logo
+            width: 100%
+            height: 100%
+
+    &__navigation
+        list-style: none
+        display: flex
+        transition-duration: 0.3s
+        .tap-screen
+          display: none
+        
+        &-item
+            display: flex
+            align-items: center
+            &_logo
+              display: none
+
+            & a
+                height: 33px
+                margin-left: 39px
+                transition-duration: 0.3s
+                text-decoration: none
+                font-size: 24px
+                line-height: 33px
+
+                &:hover
+                    border-bottom: 3px solid $main_color
+
+                
+
+    .hamburger 
+      position: absolute
+      display: none
+      width: 28px
+      height: 26px  
+      right: 11px
+      top: 11px
+      background: rgba(255, 255, 255, 0.7)
+      border-radius: 20%
+      padding: 8px 3px 0 3px
+      z-index: 1000
+
+
+      span
+        display: block
+        height: 2px
+        width: 100%
+        background: black
+        margin-bottom: 2px
+        transition: 0.5s all
+
+      &_active
+        span
+          &:nth-child(1)
+            transform: rotate(-45deg) translatey(3px) translatex(-4px) 
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: rotate(45deg) translatey(0px) translatex(1px) 
